@@ -361,6 +361,9 @@ img {
 .client-canv:focus .client-icon {
   fill: var(--accente-color);
 }
+.icon {
+  fill: var(--text-primary-color);
+}
 
 /* portfolio.html */
 
