@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="" id="page">
     <header class="header">
       <!-- Навігація -->
       <div class="container header-flex">
@@ -51,7 +51,7 @@
       <section class="section buisnes-solution">
         <div class="container">
           <h1 class="buisnes-solution-title no-margin">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button accente-button order-button">Замовити послугу</button>
+          <button type="button" class="button accente-button order-button" data-modal-open="1">Замовити послугу</button>
         </div>
       </section>
 
@@ -122,6 +122,7 @@
                       width="370"
                       height="294"
                     />
+                    <p class="what-we-do-text">Десктопні додатки</p>
                   </li>
                   <li class="we-do-item inline">
                     <img
@@ -130,6 +131,7 @@
                       width="370"
                       height="294"
                     />
+                    <p class="what-we-do-text">Мобільні додатки</p>
                   </li>
                   <li class="we-do-item inline">
                     <img
@@ -138,6 +140,7 @@
                       width="370"
                       height="294"
                     />
+                    <p class="what-we-do-text">Дизайнерські рішення</p>
                   </li>
                 </ul>
                 </div>
@@ -432,5 +435,19 @@
 
         </div>
     </footer>
+
+    <!-- =========Modal============= -->
+    <div class="modal-backdrop is-hidden" data-modal="">
+      <div class="modal-content">
+          <button class="modal-close-btn" type="button" data-modal-close="">
+            <svg width="11px" height="11px">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+      </div>
+    </div>
+    <!-- =========SCRIPT============ -->
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
